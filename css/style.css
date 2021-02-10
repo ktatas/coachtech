@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+.header {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+#eyecatch {
+  height: 700px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#eyecatch h2 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  font-style:italic;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+}
+
+.news-wrap {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.news {
+  width: 500px;
+  height: 50px;
+  background: white;
+  font-weight: bold;
+}
+
+.news h6 {
+  font-size:15px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+ .news p{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
+ }
+
+.parent {
+  position: relative;
+  width: 120px;
+  height: 50px;
+  background: black;
+  color:#fff;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#overview {
+  background-color: black;
+  height: 450px;
+
+}
+
+.overview-wrap {
+  padding-top: 150px;
+  margin: 0% 30% 0% 20%;
+}
+
+
+.overview-letters h3 {
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #fff;
+  padding-bottom: 25px;
+  position: relative;
+  z-index: 300;
+}
+
+.overview-letters p {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #fff;
+  position: relative;
+  z-index: 200;
+}
+
+.link1 {
+  padding: 7px 20px;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #000;
+  text-decoration: none;
+  border: 1px #fff solid;
+  border-radius: 2px; 
+  background-color: #fff;
+  position: relative;
+  top: 30px;
+}
+
+.overview-wrap img {
+  width: 550px;
+  height: auto;
+  position: relative;
+  top: -120px;
+  left: 70%;
+  z-index: 100;
+}
+
+#service {
+  background-color:#cccccc ;
+  background-size: cover;
+  margin-top: 15%;
+  
+}
+
+#service .section-title {
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1%;
+  color: rgb(53, 52, 52);
+}
+
+.service-wrap {
+  position: absolute;
+  position: relative;
+}
+
+.service-cat {
+  font-size: 12px;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.service-toptext {
+  position: absolute;
+  position: relative;
+  background-color: #fff;
+  width: 500px;
+  height: 200px;
+  top: -370px;
+  left: 22%;
+  padding: 40px 40px;
+  margin: 0;
+}
+
+.service-cat h3 {
+font-size: 12px;
+  font-family: sans-serif;
+  margin: 3%;
+}
+
+.service-cat h4 {
+  font-size: 11px;
+  font-family: sans-serif;
+  margin: 3%;
+}
+
+.service-cat p {
+font-size: 12px;
+  font-family: sans-serif;
+  margin: 3%;
+}
+
+.link2 {
+  padding: 7px 20px;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #000;
+  text-decoration: none;
+  border: 1px #000 solid;
+  border-radius: 2px; 
+  position: relative;
+  top: 10px;
+  left:72%;
+}
+
+.service-cat img {
+  width: 700px;
+  height: auto;
+  left: 51%;
+  position: relative;
+}
+
+
+.service-bottontext {
+  position: absolute;
+  position: relative;
+  background-color: #fff;
+  width: 500px;
+  height: 200px;
+  top: -370px;
+  left: 40%;
+  padding: 40px 40px;
+  margin: 0;
+}
+
+#service2 {
+  margin-top: 150px;
+}
+
+.service2-wrap {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  background: url(../img/company.jpeg) no-repeat;
+  background-size: cover;
+  padding: 100px 280px;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.link3,
+.link4 {
+  font-size: 32px;
+  color:#fff;
+  text-decoration: none;  
+}
+
+.company p,
+.recruit p {
+  font-size: 15px;
+  color:#fff;
+  padding-top: 5%;
+}
+
+.recruit {
+  background: url(../img/recruit.jpg) no-repeat;
+  background-size: cover;
+  padding: 100px 280px;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.FAQ {
+  background: #000;
+  margin: 10%;
+  display: flex;
+  background-size: cover;
+  height: 120px;
+  margin: 150px;
+  position: relative;
+}
+
+.FAQ p {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 8%;
+}
+
+.link5 {
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#contact {
+  height: 600px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#contact h4 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+}
+
+#contact h5 {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+}
+
+#contact h3 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #fff;
+  line-height: 1;
+}
+
+#contact p {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #fff;
+  white-space: nowrap;
+}
+
+#contact a {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+  border: 1px #fff solid;
+  padding: 8px 20px;
+}
+
+.footer {
+  height: 100px;
+  background: #000;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav li {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.footer-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+}
+
+small {
+  font-size: 12px;
+  color: #fff;
+  position:relative;
+}
