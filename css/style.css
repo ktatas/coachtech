@@ -318,6 +318,16 @@ font-size: 12px;
   position: relative;
 }
 
+.service-cat-img2 {
+  position:relative;
+}
+
+.service-cat-img2 img {
+  width: 700px;
+  height: auto;
+  left: 0%;
+}
+
 
 .service-bottontext {
   position: absolute;
@@ -325,7 +335,7 @@ font-size: 12px;
   background-color: #fff;
   width: 500px;
   height: 200px;
-  top: -370px;
+  top: -300px;
   left: 40%;
   padding: 40px 40px;
   margin: 0;
