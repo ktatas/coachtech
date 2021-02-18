@@ -199,9 +199,13 @@ input, select {
 
 .overview-wrap {
   padding-top: 150px;
-  margin: 0% 30% 0% 20%;
+  position: relative;
+
 }
 
+.overview-letters {
+  margin: 0 30% 0 20%;
+}
 
 .overview-letters h3 {
   font-size: 22px;
@@ -236,17 +240,19 @@ input, select {
 .overview-wrap img {
   width: 550px;
   height: auto;
-  position: relative;
-  top: -120px;
-  left: 70%;
+  position: absolute;
+  top: 130px;
+  right:5%;
+  padding: 0;
+  margin-right: 0;
   z-index: 100;
 }
 
 #service {
   background-color:#cccccc ;
-  background-size: cover;
+  height: 1400px;
   margin-top: 15%;
-  
+  position: relative;
 }
 
 #service .section-title {
@@ -257,25 +263,22 @@ input, select {
   color: rgb(53, 52, 52);
 }
 
-.service-wrap {
-  position: absolute;
-  position: relative;
-}
+
 
 .service-cat {
   font-size: 12px;
   font-family: sans-serif;
-  position: relative;
+  /*position: relative;*/
 }
 
 .service-toptext {
-  position: absolute;
   position: relative;
+  position: absolute;
   background-color: #fff;
-  width: 500px;
-  height: 200px;
-  top: -370px;
-  left: 22%;
+  width: 35%;
+  height: 14%;
+  top: 10%;
+  left: 20%; /*left効かない*/
   padding: 40px 40px;
   margin: 0;
 }
@@ -312,32 +315,33 @@ font-size: 12px;
 }
 
 .service-cat img {
-  width: 700px;
+  width: 50%;
   height: auto;
-  left: 51%;
-  position: relative;
+  right: 0;
+  position: absolute;
 }
 
-.service-cat-img2 {
-  position:relative;
-}
+/*.service-cat-img2 {
+ 
+}*/
 
 .service-cat-img2 img {
-  width: 700px;
+  width: 50%;
   height: auto;
   left: 0%;
+  top: 55%;
 }
 
 
 .service-bottontext {
-  position: absolute;
   position: relative;
+  position: absolute;
   background-color: #fff;
-  width: 500px;
-  height: 200px;
-  top: -300px;
+  width: 35%;
+  height: 12%;
+  top: 62%;
   left: 40%;
-  padding: 40px 40px;
+  padding: 60px 40px;
   margin: 0;
 }
 
@@ -347,15 +351,18 @@ font-size: 12px;
 
 .service2-wrap {
   text-align: center;
+  justify-content: center;
   display: flex;
   justify-content: space-between;
 }
 
-.company {
+.company { /*文字を中央に揃えたい*/
   background: url(../img/company.jpeg) no-repeat;
   background-size: cover;
-  padding: 100px 280px;
+  padding-top: 5%;
   margin: 0;
+  width: 48%;
+  height: auto;
   font-family: sans-serif;
   font-weight: bold;
 }
@@ -371,14 +378,15 @@ font-size: 12px;
 .recruit p {
   font-size: 15px;
   color:#fff;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
-.recruit {
+.recruit { /*文字を中央に揃えたい*/
   background: url(../img/recruit.jpg) no-repeat;
   background-size: cover;
-  padding: 100px 280px;
-  margin: 0;
+  padding-top: 5%;
+  width: 48%;
+  height: 150px;
   font-family: sans-serif;
   font-weight: bold;
 }
