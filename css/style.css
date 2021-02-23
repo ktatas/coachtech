@@ -490,6 +490,14 @@ body {
   color: #fff;
 }
 
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #fff;
+  line-height: 70px;
+}
+
 /*モバイル*/
 @media screen and (max-width:768px) {
   /*header*/
@@ -534,6 +542,17 @@ body {
   .news {
     width: 100%;
 }
+
+  .catchcopy {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    
+  }
+  
   /*service*/
   .service {
     flex-wrap: wrap;
@@ -560,12 +579,17 @@ body {
     flex-wrap: wrap;
   }
 
+  .faq-title {
+    font-size: 30px;
+    margin: 2%;
+  }
+
   .recruit-company_size {
     width: 100%;
   }
 
   /*footer*/
-  .top-footer h1 {
-  width: 85%;
+  .footer-logo {
+    margin:0 auto;
   }
 }
